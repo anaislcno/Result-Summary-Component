@@ -1,47 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Results summary component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Your Result
-  76
-  of 100
-
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Frontend Mentor | Results summary component</title>
+  </head>
+  <body>
+    <main>
+      <div id="container">
+        <section id="result-global">
+          <div id="result-circle">
+            <h2>Your Result</h2>
+            <span>76</span>
+            <p>of 100</p>
+          </div>
+          <h1>Great</h1>
+          You scored higher than 65% of the people who have taken these tests.
+        </section>
+        <section id="result-summary">
+          <h2>Summary</h2>
+          <div id="reaction" class="category">
+            <img src="./assets/images/icon-reaction.svg" alt="reaction icon" />
+            <h3>Reaction</h3>
+            <div class="score">
+              <p><span>80 </span>/ 100</p>
+            </div>
+          </div>
+          <div id="memory" class="category">
+            <img src="./assets/images/icon-memory.svg" alt="memory icon" />
+            <h3>Memory</h3>
+            <div class="score">
+              <p><span>92 </span>/ 100</p>
+            </div>
+          </div>
+          <div id="verbal" class="category">
+            <img src="./assets/images/icon-verbal.svg" alt="verbal icon" />
+            <h3>Verbal</h3>
+            <div class="score">
+              <p><span>61 </span>/ 100</p>
+            </div>
+          </div>
+          <div id="visual" class="category">
+            <img src="./assets/images/icon-visual.svg" alt="visual icon" />
+            <h3>Visual</h3>
+            <div class="score">
+              <p><span>72 </span>/ 100</p>
+            </div>
+          </div>
+          <button id="btn__next">Continue</button>
+        </section>
+      </div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://anaislemire.vercel.app">Anais Lemire</a>.
+      </div>
+    </main>
+  </body>
 </html>
