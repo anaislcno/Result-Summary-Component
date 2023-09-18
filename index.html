@@ -3,8 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
@@ -23,45 +21,23 @@
   <body>
     <main>
       <div id="container">
-        <section id="result-global">
-          <div id="result-circle">
-            <h2>Your Result</h2>
+        <section id="result__global">
+          <h2>Your Result</h2>
+          <div id="result__circle">
             <span>76</span>
             <p>of 100</p>
           </div>
-          <h1>Great</h1>
-          You scored higher than 65% of the people who have taken these tests.
+          <div id="greating">
+            <h1>Great</h1>
+            <p>
+              You scored higher than 65% of the people who have taken these
+              tests.
+            </p>
+          </div>
         </section>
-        <section id="result-summary">
+        <section id="result__summary">
           <h2>Summary</h2>
-          <div id="reaction" class="category">
-            <img src="./assets/images/icon-reaction.svg" alt="reaction icon" />
-            <h3>Reaction</h3>
-            <div class="score">
-              <p><span>80 </span>/ 100</p>
-            </div>
-          </div>
-          <div id="memory" class="category">
-            <img src="./assets/images/icon-memory.svg" alt="memory icon" />
-            <h3>Memory</h3>
-            <div class="score">
-              <p><span>92 </span>/ 100</p>
-            </div>
-          </div>
-          <div id="verbal" class="category">
-            <img src="./assets/images/icon-verbal.svg" alt="verbal icon" />
-            <h3>Verbal</h3>
-            <div class="score">
-              <p><span>61 </span>/ 100</p>
-            </div>
-          </div>
-          <div id="visual" class="category">
-            <img src="./assets/images/icon-visual.svg" alt="visual icon" />
-            <h3>Visual</h3>
-            <div class="score">
-              <p><span>72 </span>/ 100</p>
-            </div>
-          </div>
+          <div id="category__container"></div>
           <button id="btn__next">Continue</button>
         </section>
       </div>
@@ -72,5 +48,7 @@
         >. Coded by <a href="https://anaislemire.vercel.app">Anais Lemire</a>.
       </div>
     </main>
+    <script type="module" src="./app.js"></script>
+    <noscript>You need to enable JavaScript to view all features</noscript>
   </body>
 </html>
