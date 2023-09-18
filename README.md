@@ -16,7 +16,7 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 
 ### Screenshot
 
-![](./images/finished-screen-3.png)
+![](./assets/images/finished-screen-3.png)
 
 ### Links
 
