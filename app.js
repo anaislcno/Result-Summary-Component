@@ -1,7 +1,7 @@
 fetch("data.json")
   .then((response) => response.json())
   .then((jsonData) => {
-    // Iterate over the JSON data and populate the HTML elements
+    // Iterate over the JSON data
     jsonData.forEach((item) => {
       const { category, icon, score } = item;
 
@@ -10,7 +10,7 @@ fetch("data.json")
       categoryElement.id = category.toLowerCase();
       categoryElement.className = "category";
 
-      // Create the content for the category element
+      // Create content
       categoryElement.innerHTML = `
         <div id="top-left" class="corner"></div>
         <div id="top-right" class="corner"></div>
